@@ -35,7 +35,7 @@ A gesture-controlled PDF reader.
 
 ### Installation Steps
 ```bash
-git clone https://github.com/yourusername/gestura.git
+git clone https://github.com/Sivaranjvlehin/gestura.git
 cd gestura
 pip install -r requirements.txt
 ```
@@ -86,7 +86,6 @@ gestura/
 ## 👨‍💻 Contributors
 
 - **Sivaranj V Lehin**
-- VI Semester BCA Project Team
 
 ## 📚 References
 
