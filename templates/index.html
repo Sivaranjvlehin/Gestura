@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestura</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/styles.css') }}">
+</head>
+<body>
+    <!-- Logo Overlay (Initially Visible) -->
+    <div class="logo-overlay">
+        <img src="{{ url_for('static', filename='./images/logo.png') }}" alt="Gestura Logo">
+    </div>
+
+    <!-- Main Content (Initially Hidden) -->
+    <div class="main-content">
+        <div class="header-container">
+            <div class="header">GESTURA</div>
+            <p class="sub-header">Move | Control | Innovate</p>
+        </div>
+
+        <div class="upload-container">
+            <div id="drop-area" class="drop-area">
+                <p>Drag & Drop PDF here or Click to Upload</p>
+                <input type="file" id="fileInput" accept="application/pdf" hidden>
+                <label for="fileInput" class="custom-file-upload">Choose File</label>
+                <span id="file-preview"></span>
+            </div>
+        </div>
+        <div class="action-container">
+            <div class="page-number-area">
+                <label for="pageInput">Start Page Number:</label>
+                <input type="number" id="pageInput" min="1" value="1">
+            </div>
+        </div>
+
+        <button id="run-button" class="run-button">RUN</button>
+    </div>
+    <div class="footer-info">
+        <h2>Gesture-Based PDF Reader</h2>
+        <p><strong>Version:</strong> 1.0</p>
+        <p><strong>Description:</strong> A PDF viewer controlled using hand gestures.</p>
+        <u><h3>Future of Presenting</h3></u>
+        <strong>Tired</strong> of walking back and forth while presenting your ideas or taking a class?<br>
+        <strong>Gestura</strong> allows you to move and present at your own pace without being held back <br>
+        <strong>Move Control & Innovate</strong> we got you <br>
+    </div>
+
+    <div class="right-div">
+        <h3>How to Use:</h3>
+        <strong>Extend Pinky Finger:</strong> Move to the next page.<br>
+        <strong>Extend Thumb:</strong> Move to the previous page.<br>
+        <strong>Extend Pointer Finger:</strong> Track cursor position.<br>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
